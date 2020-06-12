@@ -61,7 +61,9 @@ public class Main
 
         // Parse the command-line arguments.
         String apis = cmdLine.getOptionValue(APIS_ARG_NAME);
-
+        System.out.println("=====================>>>args================>>>:"+args);
+        System.out.println("=====================>>>cmdLine================>>>:"+cmdLine);
+        System.out.println("=====================>>>apis================>>>:"+apis);
         // Some of our dependencies bring in slf4j, which means Jetty will default to using
         // slf4j as its logging backend.  The version of slf4j brought in, however, is too old
         // for Jetty so it throws errors.  We use java.util.logging so tell Jetty to use that
@@ -76,6 +78,7 @@ public class Main
         System.setProperty(
                 Videobridge.REST_API_PNAME,
                 Boolean.toString(apis.contains(Videobridge.REST_API)));
+//                Boolean.toString(Boolean.TRUE));
 
         // Need to force a reload to see the updated system properties
         JitsiConfig.Companion.reload();

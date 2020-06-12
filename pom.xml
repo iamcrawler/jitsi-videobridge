@@ -586,7 +586,7 @@
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
-      <url>https://github.com/jitsi/jitsi-maven-repository/raw/master/releases/</url>
+      <url>https://github.com/iamcrawler/jitsi-maven-repository/raw/master/releases/</url>
     </repository>
     <repository>
       <id>jitsi-maven-repository-snapshots</id>
@@ -598,7 +598,7 @@
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
-      <url>https://github.com/jitsi/jitsi-maven-repository/raw/master/snapshots/</url>
+      <url>https://github.com/iamcrawler/jitsi-maven-repository/raw/master/snapshots/</url>
     </repository>
   </repositories>
 </project>
